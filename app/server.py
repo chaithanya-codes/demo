@@ -12,7 +12,7 @@ class Handler(BaseHTTPRequestHandler):
             return
 
         body = (
-            f"Hello from Kubernetes!\n"
+            f"Hello from Kubernetes!!\n"
             f"Host: {socket.gethostname()}\n"
             f"Version: {os.getenv('APP_VERSION', 'local')}\n"
         ).encode()
